@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+# Borrowed liberally from awscli.
+import sys
+import os
+
+if os.environ.get('LC_CTYPE', '') == 'UTF-8':
+    os.environ['LC_CTYPE'] = 'en_US.UTF-8'
+import awsnmap.clidriver
+
+
+def main():
+    return awsnmap.clidriver.main()
+
+
+if __name__ == '__main__':
+    sys.exit(main())
