@@ -16,6 +16,7 @@ Usage:
 Alternatively you can:
 
     $ aws ec2 describe-instances --query "Reservations[*].Instances[*].PublicIpAddress" --output=text > /tmp/publicips.txt
+    
     $ nmap -il /tmp/publicips.txt -sC -sV
 
 Assuming you want to look that up every time.
